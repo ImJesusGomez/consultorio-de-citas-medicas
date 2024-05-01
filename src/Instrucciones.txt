@@ -1,0 +1,33 @@
+## Problema imaginario en Java para mejorar la lógica de programación:
+
+**Descripción:**
+
+Desarrolla un programa en Java que gestione un sistema de reserva de citas para un consultorio médico. El programa debe permitir al usuario:
+
+1. Ingresar la fecha deseada para la cita:** El usuario debe ingresar una fecha en formato String (por ejemplo, "2024-05-10").
+2. Verificar disponibilidad de horarios:** El programa debe verificar la disponibilidad de horarios para la fecha ingresada.
+   Se asume que el consultorio tiene un horario de atención de lunes a domingo de 8:00 a 18:00 horas.
+3. Asignar cita: Si hay un horario disponible, el programa debe permitir al usuario elegir un horario y asignarle la cita.
+   Se debe almacenar la fecha, hora y nombre del paciente para la cita.
+4. Mostrar citas agendadas:** El programa debe mostrar una lista de las citas agendadas
+
+**Instrucciones:**
+
+Para resolver este problema, deberás utilizar los siguientes conceptos de Java:
+
+1. Clase Date:** La clase `Date` representa un instante específico en el tiempo.
+   Puedes utilizar métodos como `getTime()` para obtener el tiempo en milisegundos desde la época (1 de enero de 1970),
+   `setTime()` para establecer un nuevo tiempo, y `toString()` para convertir la fecha a un String con un formato específico.
+
+2. Tiempo en milisegundos:** Los milisegundos son una unidad de medida del tiempo equivalente a una milésima de segundo.
+   Se utilizan frecuentemente para representar fechas y horas en Java.
+
+3. Clase Calendar:** La clase `Calendar` proporciona una forma más flexible de trabajar con fechas y horas.
+   Puedes utilizar métodos como `getInstance()` para obtener una instancia del calendario actual, `set()` para
+   establecer un valor específico para un campo de la fecha (por ejemplo, año, mes, día, hora, minuto), y `getTime()`
+   para obtener la fecha en forma de objeto `Date`.
+
+4. Convertir una fecha String a objeto del tipo Date:** Puedes utilizar la clase `SimpleDateFormat`
+   para convertir una fecha en formato String a un objeto `Date`. El constructor de la clase `SimpleDateFormat`
+   requiere un patrón de formato de fecha, que puedes encontrar en la documentación de Java.
+
